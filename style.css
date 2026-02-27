@@ -1,0 +1,113 @@
+/* 전역 스타일 설정 */
+:root {
+    --bg-dark: #050505;
+    --card-dark: #121212;
+    --neon-blue: #00d4ff;
+    --neon-purple: #9d50bb;
+    --text-gray: #b0b0b0;
+    --white: #ffffff;
+}
+
+body {
+    font-family: 'Pretendard', -apple-system, sans-serif;
+    background-color: var(--bg-dark);
+    color: var(--white);
+    margin: 0;
+    padding: 50px 20px;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* 헤더 영역 */
+header {
+    text-align: center;
+    margin-bottom: 60px;
+    border-bottom: 1px solid #333;
+    padding-bottom: 30px;
+}
+
+header h1 {
+    font-size: 3rem;
+    margin: 0;
+    background: linear-gradient(to right, var(--neon-blue), var(--neon-purple));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+header p {
+    color: var(--text-gray);
+    font-size: 1.1rem;
+    margin-top: 10px;
+}
+
+/* 카드 디자인 */
+.card {
+    background: var(--card-dark);
+    border: 1px solid #222;
+    border-radius: 20px;
+    padding: 40px;
+    margin-bottom: 30px;
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    border-color: var(--neon-blue);
+    box-shadow: 0 0 20px rgba(0, 212, 255, 0.1);
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-top: 0;
+    color: var(--neon-blue);
+}
+
+/* 프로필 정보 그리드 */
+.profile-info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-top: 25px;
+}
+
+.info-item b {
+    color: var(--neon-blue);
+    display: block;
+    font-size: 0.9rem;
+}
+
+.info-item span {
+    font-size: 1.1rem;
+}
+
+/* 태그 스타일 */
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.tag {
+    background: rgba(0, 212, 255, 0.1);
+    color: var(--neon-blue);
+    border: 1px solid var(--neon-blue);
+    padding: 6px 16px;
+    border-radius: 50px;
+    font-size: 0.9rem;
+}
+
+.highlight {
+    color: var(--neon-purple);
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+    color: #444;
+    margin-top: 50px;
+    font-size: 0.8rem;
+}
